@@ -1,0 +1,172 @@
+html{
+    margin-top: 20px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-top: 5px;
+    width: 90%;
+    max-width: 960px;
+    font-family: "Signika", sans-serif;
+    margin: 0 auto;
+    background-color: rgb(20, 20, 20);
+}
+
+header{
+    margin: 0;
+}
+
+nav{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+.nav-left h1{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 250%;
+    margin: 0;
+}
+
+.nav-right{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.nav-right ul{
+    padding-left: 0;
+    display: flex;
+}
+
+.nav-right ul li{
+    list-style: none;
+}
+
+.nav-right ul li a{
+    font-size: 120%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    border: 2px solid black;
+    color: white;
+    transition: 200ms ease-in-out;
+}
+
+
+.nav-right ul li a:hover{
+    border: 2px solid rgb(255, 102, 102);
+}
+
+.nav-right .nav-right-page-active{
+    pointer-events: none;
+    color: #000000;
+    background-color: rgb(255, 102, 102);
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+
+}
+
+
+.wrapper-title{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 350%;
+    margin: 30px 0;
+}
+
+.plan-prices{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-direction: row;
+}
+
+
+@media (max-width: 780px){
+    .plan-prices{
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
+.plan-prices .plan-title{
+    letter-spacing: 2px;
+    padding-bottom: 5px;
+    font-size: 180%;
+    text-transform: uppercase;
+    margin: 0;
+    border-bottom: 2px solid rgb(255, 102, 102);
+}
+
+.plan-prices p span{
+    font-size: 210%;
+    margin: 15px 0 15px 0;
+}
+
+.plan-prices span{
+    font-size: 100%;
+}
+
+.prices{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgb(39, 39, 39);
+}
+
+.prices ul{
+    margin: 0 0 50px 0;
+    padding-left: 20px;
+    flex-grow: 1;
+}
+
+.prices ul li{
+    margin: 0px 0 10px 0;
+}
+
+.prices ul li::marker{
+    color: rgb(255, 102, 102);
+}
+
+.prices a{
+    color: rgb(0, 0, 0);
+    font-size: 130%;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 3px solid rgb(39, 39, 39);
+    background-color: rgb(255, 102, 102);
+    display: block;
+    text-align: center;
+    padding: 15px;
+    transition: 200ms ease-in-out;
+}
+
+.prices a:hover{
+    border: 3px solid rgb(255, 102, 102);
+    background-color: rgb(39, 39, 39);
+    color: rgb(255, 255, 255);
+}
+
